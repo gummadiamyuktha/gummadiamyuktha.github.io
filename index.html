@@ -9,95 +9,134 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="data:,">
+  <meta name="theme-color" content="#0b0f14">
   <style>
-    body { margin:0; font-family: Inter, sans-serif; background:#0b0f14; color:#e6edf3; }
-    a { color:#4cc9f0; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    header, footer { padding:20px; text-align:center; background:#0f1720; }
-    .container { width:90%; max-width:1000px; margin:20px auto; }
-    h1 { color:#4cc9f0; }
-    .projects { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
-    .card { background:#0f1720; padding:16px; border-radius:12px; border:1px solid #1c2633; }
-    .card h3 { margin-top:0; }
-    .btn { display:inline-block; margin:8px 4px; padding:10px 14px; border-radius:8px; background:#0e141b; border:1px solid #1c2633; }
-    .btn i { margin-right:6px; }
+    :root{--bg:#0b0f14;--panel:#0f1720;--muted:#9fb0c3;--text:#e6edf3;--brand:#4cc9f0;--border:#1c2633}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#0b0f14}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    header,footer{padding:20px;text-align:center;background:#0f1720;border-bottom:1px solid var(--border)}
+    footer{border-top:1px solid var(--border);border-bottom:none;margin-top:30px}
+    .container{width:90%;max-width:1000px;margin:20px auto}
+    .hero h1{color:var(--brand);margin:0 0 6px}
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;margin:8px 6px;padding:10px 14px;border-radius:10px;background:#0e141b;border:1px solid var(--border)}
+    .btn i{margin-right:6px}
+    h2{margin:28px 0 10px}
+    .grid{display:grid;gap:18px}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .card{background:#0f1720;padding:16px;border-radius:14px;border:1px solid var(--border)}
+    .card h3{margin:0 0 6px}
+    .tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .tag{font-size:12px;color:#9ad7ff;background:#0f1b27;border:1px solid #113755;padding:6px 10px;border-radius:999px}
+    nav{position:sticky;top:0;background:#0f1720;border-bottom:1px solid var(--border);z-index:50}
+    .topnav{display:flex;align-items:center;justify-content:space-between;width:90%;max-width:1000px;margin:0 auto;padding:12px 0}
+    .topnav a{margin-left:16px;color:var(--muted)}
+    .topnav a:hover{color:var(--text)}
   </style>
 </head>
 <body>
-<header>
-  <h1>Amyuktha Gummadi</h1>
-  <p>Software • Data • Cybersecurity</p>
-  <a class="btn" href="https://www.linkedin.com/in/amyuktha-gummadi/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-  <a class="btn" href="https://github.com/gummadiamyuktha" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
-  <a class="btn" href="resume.pdf" target="_blank"><i class="fa-solid fa-file"></i>Resume</a>
-</header>
 
-<div class="container">
-  <h2>Featured Projects</h2>
-  <div class="projects">
-    <div class="card">
-      <h3>🎬 Sentiment Analysis App</h3>
-      <p>Classifies IMDB reviews as Positive/Negative using TF‑IDF + Logistic Regression. Deployed with Streamlit.</p>
-      <a href="https://github.com/gummadiamyuktha/sentiment-analysis-imdb" target="_blank">View on GitHub</a>
+  <!-- Top Nav -->
+  <nav>
+    <div class="topnav">
+      <div><strong style="color:var(--text)">Amyuktha Gummadi</strong></div>
+      <div>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-    <div class="card">
-      <h3>📈 Mood Song Predictor</h3>
-      <p>SQL + Power BI project to categorize songs by mood with interactive dashboards.</p>
-      <a href="https://github.com/gummadiamyuktha/songsmood" target="_blank">View on GitHub</a>
-    </div>
-    <div class="card">
-      <h3>🥘 Business Continuity Plan</h3>
-      <p>Cybersecurity risk assessment and continuity strategy for a pizzeria.</p>
-      <a href="https://github.com/gummadiamyuktha/Woodfire-Wonders-Pizzeria-Business-Continuity-Plan-Academic-Project-" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-</div>
-<h2>Skills</h2>
-<div class="projects">
-  <div class="card"><h3>Software</h3>
-    <p>Python, C/C++, Java (basic), Git, REST basics, OOP, Debugging, Unit Testing</p>
-  </div>
-  <div class="card"><h3>Data & ML</h3>
-    <p>Pandas, NumPy, scikit-learn, TF-IDF, Classification, Power BI, Tableau, SQL</p>
-  </div>
-  <div class="card"><h3>Cloud & DevOps</h3>
-    <p>AWS (Lambda, API Gateway, S3), CI/CD (basic), Docker (familiar)</p>
-  </div>
-  <div class="card"><h3>Cybersecurity</h3>
-    <p>Risk Assessment, IDS, Business Continuity Planning, Security Policy</p>
-  </div>
-  <div class="card"><h3>Certifications</h3>
-    <p>Azure Fundamentals (AZ-900), OCI Foundations Associate, Aviatrix Multicloud</p>
-  </div>
-  <div class="card"><h3>Soft Skills</h3>
-    <p>Problem Solving, Communication, Documentation, Team Collaboration (Agile)</p>
-  </div>
-</div>
+  </nav>
 
-<h2>Education</h2>
-<div class="projects">
-  <div class="card"><h3>Rowan University</h3>
-    <p>M.S. in Cybersecurity • 2025 • GPA 3.34</p>
-  </div>
-  <div class="card"><h3>KL University (KLEF)</h3>
-    <p>B.Tech. in Computer Science (Cybersecurity) • 2023 • GPA 7.76/10</p>
-  </div>
-</div>
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Amyuktha Gummadi</h1>
+    <p class="muted">Software • Data • Cybersecurity</p>
+    <a class="btn" href="https://www.linkedin.com/in/amyuktha-gummadi/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+    <a class="btn" href="https://github.com/gummadiamyuktha" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+    <!-- Resume button -->
+    <a class="btn" href="Amyuktha_Gummadi_Resume.pdf" target="_blank"><i class="fa-solid fa-file"></i> Download Resume (PDF)</a>
+  </header>
 
-<h2>Contact</h2>
-<div class="projects">
-  <div class="card">
-    <p>Open to Software, Data, and Cybersecurity roles.<br>
-       The fastest way to reach me is email or LinkedIn.</p>
-    <a class="btn" href="mailto:your.email@example.com"><i class="fa-solid fa-envelope"></i> Email</a>
-    <a class="btn" href="https://www.linkedin.com/in/amyuktha-gummadi/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-    <a class="btn" href="https://github.com/gummadiamyuktha" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-  </div>
-</div>
+  <main class="container">
 
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3>🎬 Sentiment Analysis App</h3>
+          <p>Classifies IMDB reviews as Positive/Negative using TF-IDF + Logistic Regression. Streamlit UI for predictions.</p>
+          <div class="tagrow"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Streamlit</span></div>
+          <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/sentiment-analysis-imdb" target="_blank">View on GitHub</a></p>
+        </article>
 
-<footer>
-  <p>© <script>document.write(new Date().getFullYear())</script> Amyuktha Gummadi • Built with HTML/CSS • Hosted on GitHub Pages</p>
-</footer>
+        <article class="card">
+          <h3>📈 Mood Song Predictor</h3>
+          <p>SQL + Power BI project to categorize songs by mood, with interactive dashboards.</p>
+          <div class="tagrow"><span class="tag">SQL</span><span class="tag">Power BI</span></div>
+          <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/songsmood" target="_blank">View on GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <h3>🥘 Business Continuity Plan</h3>
+          <p>Risk assessment and recovery strategy for a pizzeria, covering critical functions and disruptions.</p>
+          <div class="tagrow"><span class="tag">Cybersecurity</span><span class="tag">BCP</span></div>
+          <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/Woodfire-Wonders-Pizzeria-Business-Continuity-Plan-Academic-Project-" target="_blank">View on GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <h3>🛡 Intrusion Detection System</h3>
+          <p>DNN-based IDS to detect network threats; outperforms traditional ML baselines.</p>
+          <div class="tagrow"><span class="tag">Python</span><span class="tag">Deep Learning</span></div>
+          <p style="margin-top:10px"><em>GitHub repo coming soon</em></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid cards">
+        <div class="card"><h3>Software</h3><p>Python, C/C++, Java (basic), Git, REST basics, OOP, Debugging, Unit Testing</p></div>
+        <div class="card"><h3>Data &amp; ML</h3><p>Pandas, NumPy, scikit-learn, TF-IDF, Classification, Power BI, Tableau, SQL</p></div>
+        <div class="card"><h3>Cloud &amp; DevOps</h3><p>AWS (Lambda, API Gateway, S3), CI/CD (basic), Docker (familiar)</p></div>
+        <div class="card"><h3>Cybersecurity</h3><p>Risk Assessment, IDS, Business Continuity Planning, Security Policy</p></div>
+        <div class="card"><h3>Certifications</h3><p>Azure Fundamentals (AZ-900), OCI Foundations Associate, Aviatrix Multicloud</p></div>
+        <div class="card"><h3>Soft Skills</h3><p>Problem Solving, Communication, Documentation, Team Collaboration (Agile)</p></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid cards">
+        <div class="card"><h3>Rowan University</h3><p>M.S. in Cybersecurity • 2025 • GPA 3.34</p></div>
+        <div class="card"><h3>KL University (KLEF)</h3><p>B.Tech. in Computer Science (Cybersecurity) • 2023 • GPA 7.76/10</p></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Open to Software, Data, and Cybersecurity roles. The fastest way to reach me is email or LinkedIn.</p>
+        <p>
+          <a class="btn" href="mailto:amyuktha.gummadi.20@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/amyuktha-gummadi/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a class="btn" href="https://github.com/gummadiamyuktha" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a class="btn" href="Amyuktha_Gummadi_Resume.pdf" target="_blank"><i class="fa-solid fa-file"></i> Download Resume (PDF)</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <script>document.write(new Date().getFullYear())</script> Amyuktha Gummadi • Built with HTML/CSS • Hosted on GitHub Pages</p>
+  </footer>
 </body>
 </html>
