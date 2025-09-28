@@ -29,6 +29,7 @@
     .cards{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
     .card{background:#0f1720;padding:16px;border-radius:14px;border:1px solid var(--border)}
     .card h3{margin:0 0 6px}
+    .meta{font-size:.9rem;color:#9fb0c3;margin:4px 0 8px}
     .tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
     .tag{font-size:12px;color:#9ad7ff;background:#0f1b27;border:1px solid #113755;padding:6px 10px;border-radius:999px}
     nav{position:sticky;top:0;background:#0f1720;border-bottom:1px solid var(--border);z-index:50}
@@ -72,25 +73,29 @@
     <section id="projects">
       <h2>Featured Projects</h2>
       <div class="grid cards">
+
         <article class="card">
           <h3>🎬 Sentiment Analysis App</h3>
           <p>Classifies IMDB reviews as Positive/Negative using TF-IDF + Logistic Regression. Streamlit UI for predictions.</p>
           <div class="tagrow"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Streamlit</span></div>
           <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/sentiment-analysis-imdb" target="_blank">View on GitHub</a></p>
+          <p class="meta">Personal</p>
         </article>
 
         <article class="card">
           <h3>📈 Mood Song Predictor</h3>
-          <p>SQL + Power BI project to categorize songs by mood, with interactive dashboards.</p>
-          <div class="tagrow"><span class="tag">SQL</span><span class="tag">Power BI</span></div>
+          <p>Relational schema + SQL to categorize songs by mood with interactive dashboards in Power BI.</p>
+          <div class="tagrow"><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">Power BI</span></div>
           <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/songsmood" target="_blank">View on GitHub</a></p>
+          <p class="meta">Personal</p>
         </article>
 
         <article class="card">
           <h3>🥘 Business Continuity Plan</h3>
-          <p>Risk assessment and recovery strategy for a pizzeria, covering critical functions and disruptions.</p>
-          <div class="tagrow"><span class="tag">Cybersecurity</span><span class="tag">BCP</span></div>
+          <p>Cybersecurity risk assessment and continuity strategy for a pizzeria.</p>
+          <div class="tagrow"><span class="tag">Cybersecurity</span><span class="tag">Risk</span><span class="tag">Policy</span></div>
           <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/Woodfire-Wonders-Pizzeria-Business-Continuity-Plan-Academic-Project-" target="_blank">View on GitHub</a></p>
+          <p class="meta">Academic • KL University</p>
         </article>
 
         <article class="card">
@@ -98,7 +103,33 @@
           <p>DNN-based IDS to detect network threats; outperforms traditional ML baselines.</p>
           <div class="tagrow"><span class="tag">Python</span><span class="tag">Deep Learning</span></div>
           <p style="margin-top:10px"><em>GitHub repo coming soon</em></p>
+          <p class="meta">Academic</p>
         </article>
+
+        <!-- NEW: Big Data Analytics in Healthcare -->
+        <article class="card">
+          <h3>🏥 Big Data Analytics in Healthcare</h3>
+          <p>Analyzed large datasets from wearables, medical images, and EHRs to support clinical decisions and population health monitoring; improved care quality and operational efficiency with big data tooling.</p>
+          <div class="tagrow">
+            <span class="tag">Big Data</span><span class="tag">Healthcare</span>
+            <span class="tag">EHR</span><span class="tag">Analytics</span>
+          </div>
+          <p class="meta">Dec 2020 – Apr 2021 • Academic • KL University</p>
+          <p style="margin-top:10px"><em>GitHub repo coming soon</em></p>
+        </article>
+
+        <!-- NEW: Bus Ticket Booking System -->
+        <article class="card">
+          <h3>🚌 Bus Ticket Booking System</h3>
+          <p>Built a web app to search routes and reserve tickets across locations; added validation and integrity checks to ensure safe, correct bookings.</p>
+          <div class="tagrow">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span>
+            <span class="tag">Web App</span>
+          </div>
+          <p class="meta">Jul 2020 – Nov 2020 • Academic • KL University</p>
+          <p style="margin-top:10px"><em>GitHub repo coming soon</em></p>
+        </article>
+
       </div>
     </section>
 
@@ -145,4 +176,3 @@
   </footer>
 </body>
 </html>
-<!-- VERSION: v4-hero-subtitle-resume-text -->
