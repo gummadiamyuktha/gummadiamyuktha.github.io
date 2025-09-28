@@ -36,6 +36,7 @@
     .topnav{display:flex;align-items:center;justify-content:space-between;width:90%;max-width:1000px;margin:0 auto;padding:12px 0}
     .topnav a{margin-left:16px;color:var(--muted)}
     .topnav a:hover{color:var(--text)}
+    ul{margin:8px 0 0 18px}
   </style>
 </head>
 <body>
@@ -47,6 +48,8 @@
       <div>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#certs">Certifications</a>
+        <a href="#competitions">Competitions</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -130,24 +133,46 @@
         <div class="card"><h3>Data &amp; ML</h3><p>Pandas, NumPy, scikit-learn, TF-IDF, Classification, Power BI, Tableau, SQL</p></div>
         <div class="card"><h3>Cloud &amp; DevOps</h3><p>AWS (Lambda, API Gateway, S3), CI/CD (basic), Docker (familiar)</p></div>
         <div class="card"><h3>Cybersecurity</h3><p>Risk Assessment, IDS, Business Continuity Planning, Security Policy</p></div>
-
-        <!-- UPDATED Certifications -->
-        <div class="card">
-          <h3>Certifications</h3>
-          <p>
-            Microsoft Certified: Azure Fundamentals (AZ-900)<br/>
-            Aviatrix Certified Engineer – Multi-Cloud Network Associate (valid through Oct 2025)<br/>
-            Oracle Cloud Infrastructure – Foundations Associate
-          </p>
-        </div>
-
-        <!-- NEW Activities card for NCL -->
-        <div class="card">
-          <h3>Activities</h3>
-          <p>National Cyber League (NCL) – Participant</p>
-        </div>
-
         <div class="card"><h3>Soft Skills</h3><p>Problem Solving, Communication, Documentation, Team Collaboration (Agile)</p></div>
+      </div>
+    </section>
+
+    <!-- Certifications (separate section) -->
+    <section id="certs">
+      <h2>Certifications</h2>
+      <div class="grid cards">
+        <div class="card">
+          <h3>🎓 Azure Fundamentals (AZ-900)</h3>
+          <p>Microsoft Certified: Azure Fundamentals.</p>
+        </div>
+        <div class="card">
+          <h3>☁️ Aviatrix Multi-Cloud Network Associate</h3>
+          <p>Aviatrix Certified Engineer – valid through Oct 2025.</p>
+        </div>
+        <div class="card">
+          <h3>🟧 OCI Foundations Associate</h3>
+          <p>Oracle Cloud Infrastructure – Foundations Associate.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Competitions (separate section) -->
+    <section id="competitions">
+      <h2>Competitions</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3>🏆 National Cyber League (NCL) — Fall 2023</h3>
+          <p>Ranked <strong>490 / 4,672</strong> (top ~10%). Strengths:</p>
+          <ul>
+            <li>Enumeration &amp; Exploitation — <strong>94th percentile</strong></li>
+            <li>Scanning &amp; Reconnaissance — <strong>93rd percentile</strong></li>
+            <li>Cryptography — <strong>91st percentile</strong></li>
+          </ul>
+          <p>This challenge improved my skills in network analysis, password cracking, and forensics.  
+          Results link: <a href="https://lnkd.in/g9CN2P-c" target="_blank" rel="noopener">View NCL Results</a></p>
+          <p class="muted">#CyberSecurity #NCL #CTF #WomenInCyber #CyberSkyline</p>
+        </article>
       </div>
     </section>
 
@@ -216,3 +241,4 @@
   </footer>
 </body>
 </html>
+
