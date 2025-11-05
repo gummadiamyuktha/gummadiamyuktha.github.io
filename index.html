@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Amyuktha Gummadi – Data Engineer & DevSecOps Portfolio</title>
-  <meta name="description" content="Portfolio of Amyuktha Gummadi – Data Engineering • Cloud • DevSecOps • Cybersecurity" />
+  <title>Amyuktha Gummadi – Data Engineer & DevSecOps</title>
+  <meta name="description" content="Portfolio of Amyuktha Gummadi – Data Engineer & DevSecOps • ETL • Cloud • Cybersecurity" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
     .hero h1{color:var(--brand);margin:0 0 6px}
     .muted{color:var(--muted)}
     .subtitle{font-size:1.1rem;color:#b0c4de;font-style:italic;margin-top:6px;margin-bottom:12px}
-    .btn{display:inline-block;margin:8px 6px;padding:10px 14px;border-radius:10px;background:#0e141b;border:1px solid var(--border)}
+    .btn{display:inline-block;margin:8px 6px;padding:10px 14px;border-radius:10px;background:#0e141b;border:1px solid var(--border);font-size:0.95rem}
     .btn i{margin-right:6px}
     h2{margin:28px 0 10px}
     .grid{display:grid;gap:18px}
@@ -34,7 +34,7 @@
     .tag{font-size:12px;color:#9ad7ff;background:#0f1b27;border:1px solid #113755;padding:6px 10px;border-radius:999px}
     nav{position:sticky;top:0;background:#0f1720;border-bottom:1px solid var(--border);z-index:50}
     .topnav{display:flex;align-items:center;justify-content:space-between;width:90%;max-width:1000px;margin:0 auto;padding:12px 0}
-    .topnav a{margin-left:16px;color:var(--muted)}
+    .topnav a{margin-left:16px;color:var(--muted);font-size:0.95rem}
     .topnav a:hover{color:var(--text)}
     ul{margin:8px 0 0 18px}
   </style>
@@ -49,6 +49,7 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#certs">Certifications</a>
+        <a href="#competitions">Competitions</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -78,28 +79,40 @@
       <div class="grid cards">
         <article class="card">
           <h3>🎬 Sentiment Analysis App</h3>
-          <p>Built an ML model (TF-IDF + Logistic Regression) to classify IMDB reviews; achieved 85% accuracy with a Streamlit UI for real-time predictions.</p>
-          <div class="tagrow"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Streamlit</span></div>
-          <p><a href="https://github.com/gummadiamyuktha/sentiment-analysis-imdb" target="_blank">View on GitHub</a></p>
+          <p>Built an ML model (TF-IDF + Logistic Regression) to classify IMDB reviews with ~85% accuracy and a Streamlit UI for real-time predictions.</p>
+          <div class="tagrow">
+            <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Streamlit</span>
+          </div>
+          <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/sentiment-analysis-imdb" target="_blank">View on GitHub</a></p>
+          <p class="meta">Personal</p>
         </article>
 
         <article class="card">
           <h3>📈 Mood Song Predictor</h3>
-          <p>Designed a MySQL database and Power BI dashboard to analyze songs by tempo, energy, and valence; automated ETL processes to improve reporting by 60%.</p>
-          <div class="tagrow"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Power BI</span></div>
-          <p><a href="https://github.com/gummadiamyuktha/songsmood" target="_blank">View on GitHub</a></p>
+          <p>Designed a MySQL database and Power BI dashboard to analyze songs by tempo, energy, and valence; applied ETL workflows to improve reporting efficiency by ~60%.</p>
+          <div class="tagrow">
+            <span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Power BI</span>
+          </div>
+          <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/songsmood" target="_blank">View on GitHub</a></p>
+          <p class="meta">Personal</p>
         </article>
 
         <article class="card">
           <h3>🛡 Intrusion Detection System</h3>
-          <p>Implemented a DNN-based IDS model detecting network anomalies, improving accuracy by 18% and reducing false positives by 25%.</p>
-          <div class="tagrow"><span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Cybersecurity</span></div>
+          <p>Implemented a DNN-based IDS to detect network anomalies, improving detection accuracy by 18% and reducing false positives by 25% compared to baseline ML models.</p>
+          <div class="tagrow">
+            <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Cybersecurity</span>
+          </div>
+          <p class="meta">Academic • KL University</p>
         </article>
 
         <article class="card">
           <h3>🏢 Woodfire Wonders Pizzeria (BCP)</h3>
-          <p>Developed a Business Continuity Plan for a restaurant, improving recovery time by 80% via automated backup and recovery workflows.</p>
-          <div class="tagrow"><span class="tag">Risk Management</span><span class="tag">Disaster Recovery</span><span class="tag">Business Continuity</span></div>
+          <p>Created a Business Continuity Plan for a restaurant, improving recovery time by 80% with automated backup and restoration workflows and clear incident procedures.</p>
+          <div class="tagrow">
+            <span class="tag">Risk Management</span><span class="tag">Disaster Recovery</span><span class="tag">Business Continuity</span>
+          </div>
+          <p class="meta">Academic • Rowan University</p>
         </article>
       </div>
     </section>
@@ -108,11 +121,26 @@
     <section id="skills">
       <h2>Skills</h2>
       <div class="grid cards">
-        <div class="card"><h3>Data Engineering</h3><p>ETL Pipelines, Data Modeling, SQL, Python, Data Quality, Power BI</p></div>
-        <div class="card"><h3>Cloud & DevOps</h3><p>AWS (Lambda, API Gateway, S3), CI/CD (GitHub Actions), Docker, Terraform, Monitoring (Prometheus/Grafana)</p></div>
-        <div class="card"><h3>Security</h3><p>IAM, Network Security, Risk Assessment, Business Continuity Planning</p></div>
-        <div class="card"><h3>Programming</h3><p>Python, SQL, C, Bash, PowerShell</p></div>
-        <div class="card"><h3>Soft Skills</h3><p>Problem Solving, Collaboration, Documentation, Agile</p></div>
+        <div class="card">
+          <h3>Data Engineering</h3>
+          <p>ETL Pipelines, Data Modeling, Data Transformation, Data Validation, Data Quality Monitoring, SQL (PostgreSQL/MySQL)</p>
+        </div>
+        <div class="card">
+          <h3>Cloud & DevOps</h3>
+          <p>AWS (Lambda, API Gateway, S3, CloudWatch), CI/CD (GitHub Actions), Docker, Terraform (basic), Prometheus, Grafana</p>
+        </div>
+        <div class="card">
+          <h3>Security</h3>
+          <p>IAM (RBAC), Network Security, Intrusion Detection, Risk Assessment, Business Continuity Planning</p>
+        </div>
+        <div class="card">
+          <h3>Programming & Tools</h3>
+          <p>Python, SQL, C, Bash, PowerShell, Power BI, Tableau, Pandas, NumPy, Scikit-Learn, Excel</p>
+        </div>
+        <div class="card">
+          <h3>Soft Skills</h3>
+          <p>Problem Solving, Collaboration, Documentation, Agile Teamwork</p>
+        </div>
       </div>
     </section>
 
@@ -120,10 +148,40 @@
     <section id="certs">
       <h2>Certifications</h2>
       <div class="grid cards">
-        <div class="card"><h3>🎓 Introduction to Data Engineering</h3><p>IBM (Coursera)</p></div>
-        <div class="card"><h3>☁️ Microsoft Azure Fundamentals</h3><p>AZ-900 Certified</p></div>
-        <div class="card"><h3>🟧 Oracle Cloud Infrastructure Foundations</h3><p>Oracle Certified Associate</p></div>
-        <div class="card"><h3>🌐 Aviatrix Multicloud Networking Associate</h3><p>Valid through 2025</p></div>
+        <div class="card">
+          <h3>🎓 Introduction to Data Engineering</h3>
+          <p>IBM – Coursera</p>
+        </div>
+        <div class="card">
+          <h3>☁️ Microsoft Azure Fundamentals</h3>
+          <p>AZ-900 Certified</p>
+        </div>
+        <div class="card">
+          <h3>🟧 Oracle Cloud Infrastructure Foundations</h3>
+          <p>Foundations Associate</p>
+        </div>
+        <div class="card">
+          <h3>🌐 Aviatrix Multicloud Networking Associate</h3>
+          <p>Valid through 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitions -->
+    <section id="competitions">
+      <h2>Competitions</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3>🏆 National Cyber League (NCL) — Fall 2023</h3>
+          <p>Ranked <strong>490 / 4,672</strong> (top ~10%). Strengths:</p>
+          <ul>
+            <li>Enumeration &amp; Exploitation — <strong>94th percentile</strong></li>
+            <li>Scanning &amp; Reconnaissance — <strong>93rd percentile</strong></li>
+            <li>Cryptography — <strong>91st percentile</strong></li>
+          </ul>
+          <p>This challenge improved my skills in network analysis, password cracking, and forensics.
+          Results link: <a href="https://lnkd.in/g9CN2P-c" target="_blank" rel="noopener">View NCL Results</a></p>
+        </article>
       </div>
     </section>
 
@@ -136,8 +194,8 @@
           <h3>💻 Full-Stack Developer / DevSecOps Engineer</h3>
           <p><strong>Saayam For All</strong> • Remote, USA • Aug 2025 – Present</p>
           <ul>
-            <li>Built and deployed AWS-based ETL pipelines, reducing data refresh time by 45%.</li>
-            <li>Automated deployments via GitHub Actions, cutting release cycles by 30%.</li>
+            <li>Built and deployed AWS-based ETL pipelines using Python and PostgreSQL, reducing data refresh time by 45%.</li>
+            <li>Automated deployments with GitHub Actions, cutting release cycles by 30%.</li>
             <li>Configured Prometheus + Grafana dashboards, improving uptime visibility by 40%.</li>
           </ul>
         </article>
@@ -146,9 +204,9 @@
           <h3>🌐 Data Engineer</h3>
           <p><strong>Arete IT Services Pvt. Ltd</strong> • Vijayawada, India • Jul 2022 – Jul 2023</p>
           <ul>
-            <li>Developed Python + MySQL ETL pipelines integrating 5 data sources.</li>
-            <li>Optimized SQL queries, boosting load performance by 35%.</li>
-            <li>Automated data transformations, saving 10 hours/week of manual effort.</li>
+            <li>Developed Python + MySQL ETL pipelines integrating data from 5 business sources.</li>
+            <li>Optimized SQL queries and indexing, boosting data-load performance by 35%.</li>
+            <li>Automated data transformations, saving ~10 hours/week of manual effort.</li>
           </ul>
         </article>
 
@@ -156,9 +214,9 @@
           <h3>📊 Data Engineer Intern</h3>
           <p><strong>Avishkar Tech Solutions</strong> • Remote, India • Jun 2021 – Jun 2022</p>
           <ul>
-            <li>Automated data parsing and cleansing using Python and Pandas, improving data quality by 20%.</li>
-            <li>Used NumPy vectorization to reduce runtime by 25%.</li>
-            <li>Supported schema validation and ETL testing.</li>
+            <li>Automated data parsing and cleansing using Python and Pandas, improving dataset quality by 20%.</li>
+            <li>Used NumPy vectorization to reduce pipeline runtime by 25%.</li>
+            <li>Supported schema validation and ETL testing for consistent data.</li>
           </ul>
         </article>
 
@@ -169,8 +227,14 @@
     <section id="education">
       <h2>Education</h2>
       <div class="grid cards">
-        <div class="card"><h3>Rowan University</h3><p>M.S. in Computer and Information Systems Security • 2025</p></div>
-        <div class="card"><h3>KL University (KLEF)</h3><p>B.Tech. in Computer Science (Cybersecurity) • 2023</p></div>
+        <div class="card">
+          <h3>Rowan University</h3>
+          <p>M.S. in Computer and Information Systems Security • 2025</p>
+        </div>
+        <div class="card">
+          <h3>KL University (KLEF)</h3>
+          <p>B.Tech. in Computer Science (Cybersecurity) • 2023</p>
+        </div>
       </div>
     </section>
 
@@ -178,7 +242,7 @@
     <section id="contact">
       <h2>Contact</h2>
       <div class="card">
-        <p>Open to opportunities in Data Engineering, Cloud, and DevSecOps roles. Reach out via email or LinkedIn.</p>
+        <p>Open to roles in Data Engineering, Cloud, and DevSecOps. The fastest way to reach me is via email or LinkedIn.</p>
         <p>
           <a class="btn" href="mailto:amyuktha.gummadi.20@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
           <a class="btn" href="https://www.linkedin.com/in/amyuktha-gummadi/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
