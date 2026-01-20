@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Amyuktha Gummadi – Data Engineer & DevSecOps</title>
-  <meta name="description" content="Portfolio of Amyuktha Gummadi – Data Engineer & DevSecOps • ETL • Cloud • Cybersecurity" />
+  <title>Amyuktha Gummadi – Data Engineer & GenAI (RAG)</title>
+  <meta name="description" content="Portfolio of Amyuktha Gummadi – Data Engineer • AWS • Azure • Snowflake • dbt • Spark • GenAI (RAG)" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
     .container{width:90%;max-width:1000px;margin:20px auto}
     .hero h1{color:var(--brand);margin:0 0 6px}
     .muted{color:var(--muted)}
-    .subtitle{font-size:1.1rem;color:#b0c4de;font-style:italic;margin-top:6px;margin-bottom:12px}
+    .subtitle{font-size:1.05rem;color:#b0c4de;font-style:italic;margin-top:6px;margin-bottom:12px}
     .btn{display:inline-block;margin:8px 6px;padding:10px 14px;border-radius:10px;background:#0e141b;border:1px solid var(--border);font-size:0.95rem}
     .btn i{margin-right:6px}
     h2{margin:28px 0 10px}
@@ -37,6 +37,8 @@
     .topnav a{margin-left:16px;color:var(--muted);font-size:0.95rem}
     .topnav a:hover{color:var(--text)}
     ul{margin:8px 0 0 18px}
+    .split{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+    .small{font-size:.92rem}
   </style>
 </head>
 <body>
@@ -53,7 +55,7 @@
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
-        <a href="Amyuktha_Gummadi_Resume.pdf?v=5" target="_blank">Resume</a>
+        <a href="Amyuktha_Gummadi_Resume.pdf?v=6" target="_blank" rel="noopener">Resume</a>
       </div>
     </div>
   </nav>
@@ -64,11 +66,23 @@
          style="width:160px;height:160px;border-radius:50%;object-fit:cover;
                 border:3px solid #4cc9f0;margin-bottom:12px;">
     <h1>Amyuktha Gummadi</h1>
-    <p class="muted">Data Engineer • DevSecOps • Cloud</p>
-    <p class="subtitle">Building reliable, secure, and scalable data systems.</p>
-    <a class="btn" href="https://www.linkedin.com/in/amyuktha-gummadi/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-    <a class="btn" href="https://github.com/gummadiamyuktha" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
-    <a class="btn" href="Amyuktha_Gummadi_Resume.pdf?v=5" target="_blank"><i class="fa-solid fa-file"></i> Resume</a>
+    <p class="muted">Data Engineer • Cloud (AWS/Azure) • Snowflake/dbt • GenAI (RAG)</p>
+    <p class="subtitle">Building reliable, scalable data pipelines and analytics-ready datasets.</p>
+
+    <div class="split">
+      <a class="btn" href="https://www.linkedin.com/in/amyuktha-gummadi/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-linkedin"></i>LinkedIn
+      </a>
+      <a class="btn" href="https://github.com/gummadiamyuktha" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i>GitHub
+      </a>
+      <a class="btn" href="Amyuktha_Gummadi_Resume.pdf?v=6" target="_blank" rel="noopener">
+        <i class="fa-solid fa-file"></i>Resume
+      </a>
+      <a class="btn" href="mailto:amyuktha.gummadi.20@gmail.com">
+        <i class="fa-solid fa-envelope"></i>Email
+      </a>
+    </div>
   </header>
 
   <main class="container">
@@ -78,29 +92,60 @@
       <h2>Featured Projects</h2>
       <div class="grid cards">
 
+<<<<<<< HEAD
+=======
+        <!-- NEW PROJECT -->
+        <article class="card">
+          <h3>🏗️ Metadata-Driven Data Engineering Pipeline</h3>
+          <p class="small">
+            Built an end-to-end metadata-driven ELT pipeline using AWS S3 → Snowflake → dbt.
+            Organized models into Bronze/Silver/Gold layers and delivered analytics-ready outputs (fact tables, star schema, OBT).
+            Implemented incremental models and dbt snapshots (SCD Type 2).
+          </p>
+          <div class="tagrow">
+            <span class="tag">AWS S3</span><span class="tag">Snowflake</span><span class="tag">dbt</span>
+            <span class="tag">Jinja</span><span class="tag">Medallion</span><span class="tag">SCD Type 2</span>
+          </div>
+          <p style="margin-top:10px">
+            <a href="https://github.com/gummadiamyuktha" target="_blank" rel="noopener">View on GitHub</a>
+          </p>
+          <p class="meta">Personal • Data Engineering</p>
+        </article>
+
+>>>>>>> d5bc21d (Update portfolio content and resume)
         <article class="card">
           <h3>🎬 Sentiment Analysis App</h3>
-          <p>Built an ML model (TF-IDF + Logistic Regression) to classify IMDB reviews with ~85% accuracy and a Streamlit UI for real-time predictions.</p>
+          <p class="small">
+            Built a sentiment classifier (TF-IDF + Logistic Regression) with ~85% accuracy and a Streamlit UI for real-time predictions.
+          </p>
           <div class="tagrow">
             <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">Streamlit</span>
           </div>
-          <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/sentiment-analysis-imdb" target="_blank">View on GitHub</a></p>
+          <p style="margin-top:10px">
+            <a href="https://github.com/gummadiamyuktha/sentiment-analysis-imdb" target="_blank" rel="noopener">View on GitHub</a>
+          </p>
           <p class="meta">Personal</p>
         </article>
 
         <article class="card">
           <h3>📈 Mood Song Predictor</h3>
-          <p>Designed a MySQL database and Power BI dashboard to analyze songs by tempo, energy, and valence; applied ETL workflows to improve reporting efficiency by ~60%.</p>
+          <p class="small">
+            Designed a relational database and Power BI dashboard to analyze songs by tempo, energy, and valence; built SQL transformations to support reporting.
+          </p>
           <div class="tagrow">
             <span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Power BI</span>
           </div>
-          <p style="margin-top:10px"><a href="https://github.com/gummadiamyuktha/songsmood" target="_blank">View on GitHub</a></p>
+          <p style="margin-top:10px">
+            <a href="https://github.com/gummadiamyuktha/songsmood" target="_blank" rel="noopener">View on GitHub</a>
+          </p>
           <p class="meta">Personal</p>
         </article>
 
         <article class="card">
           <h3>🛡 Intrusion Detection System</h3>
-          <p>Implemented a DNN-based IDS to detect network anomalies, improving detection accuracy by 18% and reducing false positives by 25% compared to baseline ML models.</p>
+          <p class="small">
+            Implemented a DNN-based IDS to detect network anomalies and compare performance against baseline ML models.
+          </p>
           <div class="tagrow">
             <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Cybersecurity</span>
           </div>
@@ -109,9 +154,11 @@
 
         <article class="card">
           <h3>🏢 Woodfire Wonders Pizzeria (BCP)</h3>
-          <p>Created a Business Continuity Plan for a restaurant, improving recovery time by 80% with automated backup and restoration workflows and clear incident procedures.</p>
+          <p class="small">
+            Created a Business Continuity Plan with backup, recovery, and incident response procedures to improve operational resilience.
+          </p>
           <div class="tagrow">
-            <span class="tag">Risk Management</span><span class="tag">Disaster Recovery</span><span class="tag">Business Continuity</span>
+            <span class="tag">Risk Assessment</span><span class="tag">Disaster Recovery</span><span class="tag">Business Continuity</span>
           </div>
           <p class="meta">Academic • Rowan University</p>
         </article>
@@ -123,30 +170,40 @@
     <section id="skills">
       <h2>Skills</h2>
       <div class="grid cards">
+
         <div class="card">
           <h3>Data Engineering</h3>
-          <p>ETL Pipelines, Data Modeling, Data Transformation, Data Validation, Data Quality Monitoring, SQL (PostgreSQL/MySQL)</p>
+          <p>ETL/ELT Pipelines, dbt (models, snapshots, tests), Data Modeling (Star Schema, OBT), Incremental Loads, Data Quality</p>
         </div>
 
         <div class="card">
-          <h3>Cloud & DevOps</h3>
-          <p>AWS (Lambda, API Gateway, S3, CloudWatch), CI/CD (GitHub Actions), Docker, Terraform (basic), Prometheus, Grafana</p>
+          <h3>Cloud</h3>
+          <p>AWS (S3, Lambda – basic), Azure (Data Factory, Data Lake), Snowflake, Git, CI/CD fundamentals</p>
         </div>
 
         <div class="card">
-          <h3>Security</h3>
-          <p>IAM (RBAC), Network Security, Intrusion Detection, Risk Assessment, Business Continuity Planning</p>
+          <h3>Big Data</h3>
+          <p>Apache Spark (PySpark), Databricks, distributed data processing</p>
         </div>
 
+<<<<<<< HEAD
+=======
+        <div class="card">
+          <h3>Generative AI (Foundational, Hands-on)</h3>
+          <p>LLM fundamentals, transformers, embeddings, vector databases (ChromaDB), RAG (chunking + similarity search), LangChain (chains & agents), vector store persistence</p>
+        </div>
+
+>>>>>>> d5bc21d (Update portfolio content and resume)
         <div class="card">
           <h3>Programming & Tools</h3>
-          <p>Python, SQL, C, Bash, PowerShell, Power BI, Tableau, Pandas, NumPy, Scikit-Learn, Excel</p>
+          <p>Python, SQL, PostgreSQL, MySQL, Power BI, Tableau, Pandas, NumPy, scikit-learn, Git</p>
         </div>
 
         <div class="card">
           <h3>Soft Skills</h3>
           <p>Problem Solving, Collaboration, Documentation, Agile Teamwork</p>
         </div>
+
       </div>
     </section>
 
@@ -155,6 +212,7 @@
       <h2>Certifications</h2>
       <div class="grid cards">
 
+<<<<<<< HEAD
         <div class="card">
           <h3>🟦 Databricks Certified Data Engineer Associate</h3>
           <p>Issued Dec 9, 2025 • Expires Dec 9, 2027</p>
@@ -164,23 +222,30 @@
           </p>
         </div>
 
+=======
+>>>>>>> d5bc21d (Update portfolio content and resume)
         <div class="card">
-          <h3>🎓 Introduction to Data Engineering</h3>
-          <p>IBM – Coursera</p>
+          <h3>🟦 Databricks Certified Data Engineer Associate</h3>
+          <p>Issued Dec 9, 2025 • Expires Dec 9, 2027</p>
+          <p class="muted">Skills: Apache Spark, Delta Lake, Databricks Lakehouse, ETL Pipelines, SQL, Python, Production Workflows.</p>
         </div>
 
         <div class="card">
-          <h3>☁️ Microsoft Azure Fundamentals</h3>
-          <p>AZ-900 Certified</p>
+          <h3>☁️ Microsoft Azure Fundamentals (AZ-900)</h3>
+          <p>Certified</p>
         </div>
 
         <div class="card">
-          <h3>🟧 Oracle Cloud Infrastructure Foundations</h3>
-          <p>Foundations Associate</p>
+          <h3>🟧 Oracle Cloud Infrastructure Foundations Associate</h3>
+          <p>Certified</p>
         </div>
 
         <div class="card">
           <h3>🌐 Aviatrix Multicloud Networking Associate</h3>
+<<<<<<< HEAD
+=======
+          <p>Certified</p>
+>>>>>>> d5bc21d (Update portfolio content and resume)
         </div>
 
       </div>
@@ -198,8 +263,7 @@
             <li>Scanning & Reconnaissance — <strong>93rd percentile</strong></li>
             <li>Cryptography — <strong>91st percentile</strong></li>
           </ul>
-          <p>This challenge improved my skills in network analysis, password cracking, and forensics.
-          Results link: <a href="https://lnkd.in/g9CN2P-c" target="_blank" rel="noopener">View NCL Results</a></p>
+          <p>Results link: <a href="https://lnkd.in/g9CN2P-c" target="_blank" rel="noopener">View NCL Results</a></p>
         </article>
       </div>
     </section>
@@ -210,32 +274,36 @@
       <div class="grid cards">
 
         <article class="card">
-          <h3>💻 Full-Stack Developer</h3>
+          <h3>💻 Full-Stack Developer (Data-Focused)</h3>
           <p><strong>Saayam For All</strong> • Remote, USA • Aug 2025 – Present</p>
           <ul>
-            <li>Built and deployed AWS-based ETL pipelines using Python and PostgreSQL, reducing data refresh time by 45%.</li>
-            <li>Automated deployments with GitHub Actions, cutting release cycles by 30%.</li>
-            <li>Configured Prometheus + Grafana dashboards, improving uptime visibility by 40%.</li>
+            <li>Built backend data workflows using Python and PostgreSQL to support analytics and operational reporting.</li>
+            <li>Automated data refresh processes and basic monitoring to improve pipeline reliability.</li>
+            <li>Collaborated with cross-functional teams to support data-driven application features.</li>
           </ul>
         </article>
 
         <article class="card">
           <h3>🌐 Data Engineer</h3>
-          <p><strong>Arete IT Services Pvt. Ltd</strong> • Vijayawada, India • Jul 2022 – Jul 2023</p>
+          <p><strong>ARETE IT Services Pvt. Ltd.</strong> • India • Jul 2022 – Jul 2023</p>
           <ul>
-            <li>Developed Python + MySQL ETL pipelines integrating data from 5 business sources.</li>
-            <li>Optimized SQL queries and indexing, boosting data-load performance by 35%.</li>
-            <li>Automated data transformations, saving ~10 hours/week of manual effort.</li>
+            <li>Designed and supported end-to-end ELT pipelines integrating multiple source systems into a MySQL data warehouse.</li>
+            <li>Built Spark transformations in Databricks and delivered Silver/Gold datasets aligned with Medallion patterns.</li>
+            <li>Orchestrated ingestion using Azure Data Factory and managed data in Azure Data Lake.</li>
           </ul>
         </article>
 
         <article class="card">
+<<<<<<< HEAD
           <h3>📊 Data Engineer Intern</h3>  
+=======
+          <h3>📊 Data Engineer Intern / Data Science Intern</h3>
+>>>>>>> d5bc21d (Update portfolio content and resume)
           <p><strong>Avishkar Tech Solutions</strong> • Remote, India • Jun 2021 – Jun 2022</p>
           <ul>
-            <li>Automated data parsing and cleansing using Python and Pandas, improving dataset quality by 20%.</li>
-            <li>Used NumPy vectorization to reduce pipeline runtime by 25%.</li>
-            <li>Supported schema validation and ETL testing for consistent data.</li>
+            <li>Developed Python-based ETL pipelines for data cleaning, transformation, and validation.</li>
+            <li>Used PySpark and Pandas for scalable processing and performance optimization.</li>
+            <li>Prepared curated datasets for analytics and reporting.</li>
           </ul>
         </article>
 
@@ -248,6 +316,41 @@
       <div class="grid cards">
         <div class="card">
           <h3>Rowan University</h3>
-          <p>M.S. in Computer and Information Systems Security • 2025</p>
+          <p>M.S. in Computer & Information Systems Security • May 2025</p>
         </div>
+<<<<<<< HEAD
         <div class="card
+=======
+        <div class="card">
+          <h3>Koneru Lakshmaiah Education Foundation (KL University)</h3>
+          <p>B.Tech in Computer Science • May 2023</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid cards">
+        <div class="card">
+          <h3>Let’s connect</h3>
+          <p>Email: <a href="mailto:amyuktha.gummadi.20@gmail.com">amyuktha.gummadi.20@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/amyuktha-gummadi/" target="_blank" rel="noopener">amyuktha-gummadi</a></p>
+          <p>GitHub: <a href="https://github.com/gummadiamyuktha" target="_blank" rel="noopener">gummadiamyuktha</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="muted">© <span id="year"></span> Amyuktha Gummadi • Built with HTML/CSS • Hosted on GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
